@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #131212;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .container {
+        width: 80vw;
+        height: 90vh;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        width: 95%;
+        height: 90%;
+        background: rgb(252, 87, 87);
+      }
+      .main_nav {
+        display: flex;
+        justify-content: space-between;
+        height: 10%;
+        border-bottom: 1px solid black;
+      }
+      .dots {
+        width: 20%;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding-left: 1rem;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: white;
+      }
+      .content_data{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        padding: 1rem;
+      }
+      .content_container{
+        background: white;
+        padding: 1rem;
+      }
+      .content_container_one{
+        grid-area: 1/1/2/3;
+      }
+      .content_container_two{
+        grid-area: 1/3/2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="main_nav">
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="content_data">
+            <div class="content_container content_container_one">
+                <h4>heading One</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit repellendus placeat voluptates ex quae adipisci hic ipsam atque neque!</p>
+            </div>
+            <div class="content_container content_container_two">
+                <h4>heading One</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit repellendus placeat voluptates ex quae adipisci hic ipsam atque neque!</p>
+            </div>
+            <div class="content_container">
+                <h4>heading One</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit repellendus placeat voluptates ex quae adipisci hic ipsam atque neque!</p>
+            </div>
+            <div class="content_container">
+                <h4>heading One</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit repellendus placeat voluptates ex quae adipisci hic ipsam atque neque!</p>
+            </div>
+            <div class="content_container">
+                <h4>heading One</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit repellendus placeat voluptates ex quae adipisci hic ipsam atque neque!</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
